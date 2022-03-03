@@ -1,12 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/estilos.css" />
+    <link
+      rel="stylesheet"
+      href="/node_modules/bootstrap-icons/font/bootstrap-icons.css"
+    />
+    <title>Portafolio</title>
+  </head>
+  <body>
+    <!-- data-bs-spy="scroll" data-bs-target="#navbar-edwin" data-bs-offset="10" tabindex="0" -->
+
+    <!-- Barra de navegacion -->
+    <nav class="navbar navbar-expand-lg bg-danger">
+      <div class="container">
+        <a class="navbar-brand text-white" href="#">
+          <span class="align-middle">Edwin</span>
+        </a>
+        <button
+          class="navbar-toggler navbar-dark "
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link color-menu" aria-current="page" href="#acerca"
+                >Acerca</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link color-menu" href="#experiencia">Experiencia</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link color-menu" href="#proyecto">Proyectos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link color-menu" href="#habilidad">Habilidades</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link color-menu" href="#contacto">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Fin barra navegacion -->
+
+    <!-- Section Hola -->
+    <section class="container text-center mt-5">
+      <div class="row justify-content-center">
+        <div class="col-xl-6">
+          <h1>
+            Hola,Soy <span class="span-hola">Edwin Torrado</span> Front-End
+            Developer
+          </h1>
+        </div>
+
+        <div>
+          <a class="btn btn-danger">
+            <i class="bi bi-arrow-right-circle-fill"></i>
+            Contactame
+          </a>
+        </div>
+
+        <div>
+          <i class="bi bi-linkedin"></i>
+          <i class="bi bi-github"></i>
+        </div>
+      </div>
+    </section>
+    <!-- Section Hola Final -->
+
+    <script src="/bootstrap/dist/js/bootstrap.min.js"></script>
+  </body>
 </html>
