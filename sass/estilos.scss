@@ -1,16 +1,32 @@
 @import "../bootstrap/scss/bootstrap";
 
-// Color menus-hover
-.color-menu{
+// Menu
+
+    .color-menu{
     color:white;
+
 }
 .color-menu:hover{
     color: #e5e5e5;
-}
-.color-toggler{
-    color: white;
-}
-// Span Hola
+    }
+    
+
+
+// Hola
+
 .span-hola{
-    color: red;
+color: red;
 }
+.encabezado{
+    font-size: 3.5rem;
+}
+
+//Iconos
+.bi-linkedin{
+    font-size: 2rem;
+}
+.bi-github{
+    font-size: 2rem;
+}
+
+

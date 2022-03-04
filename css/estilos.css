@@ -11965,11 +11965,19 @@ fieldset:disabled .btn {
   color: #e5e5e5;
 }
 
-.color-toggler {
-  color: white;
-}
-
 .span-hola {
   color: red;
+}
+
+.encabezado {
+  font-size: 3.5rem;
+}
+
+.bi-linkedin {
+  font-size: 2rem;
+}
+
+.bi-github {
+  font-size: 2rem;
 }
 /*# sourceMappingURL=estilos.css.map */
