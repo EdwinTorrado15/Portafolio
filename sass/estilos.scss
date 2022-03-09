@@ -1,21 +1,21 @@
 @import "../bootstrap/scss/bootstrap";
+@import "./colores/colores.scss";
 
 // Menu
-
-    .color-menu{
-    color:white;
-
+.navbar{
+    background: $color-navbar;
+}
+.color-menu{
+color: $color-menu;
 }
 .color-menu:hover{
-    color: #e5e5e5;
-    }
+color: $color-menu-hover;
+}
+//Fin seccion Menu
     
-
-
-// Hola
-
+// Seccion Hola
 .span-hola{
-color: red;
+color: #E63946;
 }
 .encabezado{
     font-size: 3.5rem;
@@ -28,5 +28,72 @@ color: red;
 .bi-github{
     font-size: 2rem;
 }
+//boton
+.btn{
+    background: $color-boton;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.btn:hover{
+    background: $boton-hover;
+}
+.contactame{
+    color: $color-menu;
+}
+.contactame:hover{
+ color: $color-menu;
+}
+//Fin seccion Hola
 
+//Seccion Acerca
+h2{
+    text-decoration: underline;
+    color: $color-secciones;
+}
+.titulo-acerca{
+    color: black;
+    text-decoration: none;
+}
+.imagen{
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+//Fin Seccion Acerca
 
+// Seccion Experiencia
+.admin-gym{
+    background: #E9ECEF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    .bi-people-fill{
+        font-size: 1.5rem;
+        color: $color-iconos;
+    }
+    .titulo{
+        font-weight: bold;
+    }
+    
+}
+.front-end{
+    background: #E9ECEF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    .bi-laptop-fill{
+        font-size: 1.5rem;
+        color: $color-iconos;
+    }
+    .titulo{
+        font-weight: bold;
+    }
+}
+.web-designer{
+    background: #E9ECEF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    .bi-pencil-fill{
+        font-size: 1.5rem;
+        color: $color-iconos;
+    }
+    .titulo{
+        font-weight: bold;
+    }
+}
+// Fin Seccion experiencia

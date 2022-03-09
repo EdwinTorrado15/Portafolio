@@ -11957,16 +11957,20 @@ fieldset:disabled .btn {
   }
 }
 
+.navbar {
+  background: #E63946;
+}
+
 .color-menu {
-  color: white;
+  color: #ffffff;
 }
 
 .color-menu:hover {
-  color: #e5e5e5;
+  color: #d3d3d3;
 }
 
 .span-hola {
-  color: red;
+  color: #E63946;
 }
 
 .encabezado {
@@ -11979,5 +11983,86 @@ fieldset:disabled .btn {
 
 .bi-github {
   font-size: 2rem;
+}
+
+.btn {
+  background: #E63946;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.btn:hover {
+  background: #ba181b;
+}
+
+.contactame {
+  color: #ffffff;
+}
+
+.contactame:hover {
+  color: #ffffff;
+}
+
+h2, .h2 {
+  text-decoration: underline;
+  color: #E63946;
+}
+
+.titulo-acerca {
+  color: black;
+  text-decoration: none;
+}
+
+.imagen {
+  -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+          filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.admin-gym {
+  background: #E9ECEF;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+}
+
+.admin-gym .bi-people-fill {
+  font-size: 1.5rem;
+  color: #E63946;
+}
+
+.admin-gym .titulo {
+  font-weight: bold;
+}
+
+.front-end {
+  background: #E9ECEF;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+}
+
+.front-end .bi-laptop-fill {
+  font-size: 1.5rem;
+  color: #E63946;
+}
+
+.front-end .titulo {
+  font-weight: bold;
+}
+
+.web-designer {
+  background: #E9ECEF;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+}
+
+.web-designer .bi-pencil-fill {
+  font-size: 1.5rem;
+  color: #E63946;
+}
+
+.web-designer .titulo {
+  font-weight: bold;
 }
 /*# sourceMappingURL=estilos.css.map */
