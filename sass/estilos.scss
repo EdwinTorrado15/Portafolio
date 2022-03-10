@@ -18,16 +18,23 @@ color: $color-menu-hover;
 color: #E63946;
 }
 .encabezado{
-    font-size: 3.5rem;
+    font-size: 4rem;
 }
 
 //Iconos
-.bi-linkedin{
+.icono-link{
+    color: $color-icono;
+    .bi-linkedin{
     font-size: 2rem;
-}
-.bi-github{
+    }
+    .bi-github{
     font-size: 2rem;
+    }
 }
+.icono-link:hover{
+    color: $color-icono-hover;
+}
+
 //boton
 .btn{
     background: $color-boton;
@@ -38,6 +45,7 @@ color: #E63946;
 }
 .contactame{
     color: $color-menu;
+    font-size: 1.5rem;
 }
 .contactame:hover{
  color: $color-menu;
@@ -56,6 +64,12 @@ h2{
 .imagen{
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
+.acerca{
+    color: $color-menu;
+}
+.acerca:hover{
+    color: $color-menu;
+   }
 //Fin Seccion Acerca
 
 // Seccion Experiencia
@@ -67,7 +81,7 @@ h2{
         font-size: 1.5rem;
         color: $color-iconos;
     }
-    .titulo{
+    h5{
         font-weight: bold;
     }
     
@@ -80,20 +94,45 @@ h2{
         font-size: 1.5rem;
         color: $color-iconos;
     }
-    .titulo{
+    h5{
         font-weight: bold;
     }
 }
 .web-designer{
     background: #E9ECEF;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 10px;
+    border-radius: 1rem;
     .bi-pencil-fill{
         font-size: 1.5rem;
         color: $color-iconos;
     }
-    .titulo{
+    h5{
         font-weight: bold;
     }
 }
 // Fin Seccion experiencia
+
+//Seccion proyectos
+.proyecto{
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 1rem;
+    h5{
+        font-weight: bold;
+    }
+    .btn{
+        color: $color-menu;
+    }
+    
+}
+//Fin seccion proyectos
+
+//Seccion habilidades
+.titulo{
+    color: $color-secciones;
+    text-decoration: underline;
+    
+}
+.bi-caret-right-fill{
+        color: $color-iconos;
+    }
+//Fin seccion habilidades

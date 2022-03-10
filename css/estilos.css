@@ -11974,15 +11974,23 @@ fieldset:disabled .btn {
 }
 
 .encabezado {
-  font-size: 3.5rem;
+  font-size: 4rem;
 }
 
-.bi-linkedin {
+.icono-link {
+  color: #000;
+}
+
+.icono-link .bi-linkedin {
   font-size: 2rem;
 }
 
-.bi-github {
+.icono-link .bi-github {
   font-size: 2rem;
+}
+
+.icono-link:hover {
+  color: #252422;
 }
 
 .btn {
@@ -11997,6 +12005,7 @@ fieldset:disabled .btn {
 
 .contactame {
   color: #ffffff;
+  font-size: 1.5rem;
 }
 
 .contactame:hover {
@@ -12018,6 +12027,14 @@ h2, .h2 {
           filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
+.acerca {
+  color: #ffffff;
+}
+
+.acerca:hover {
+  color: #ffffff;
+}
+
 .admin-gym {
   background: #E9ECEF;
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -12030,7 +12047,7 @@ h2, .h2 {
   color: #E63946;
 }
 
-.admin-gym .titulo {
+.admin-gym h5, .admin-gym .h5 {
   font-weight: bold;
 }
 
@@ -12046,7 +12063,7 @@ h2, .h2 {
   color: #E63946;
 }
 
-.front-end .titulo {
+.front-end h5, .front-end .h5 {
   font-weight: bold;
 }
 
@@ -12054,7 +12071,7 @@ h2, .h2 {
   background: #E9ECEF;
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  border-radius: 10px;
+  border-radius: 1rem;
 }
 
 .web-designer .bi-pencil-fill {
@@ -12062,7 +12079,30 @@ h2, .h2 {
   color: #E63946;
 }
 
-.web-designer .titulo {
+.web-designer h5, .web-designer .h5 {
   font-weight: bold;
+}
+
+.proyecto {
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 1rem;
+}
+
+.proyecto h5, .proyecto .h5 {
+  font-weight: bold;
+}
+
+.proyecto .btn {
+  color: #ffffff;
+}
+
+.titulo {
+  color: #E63946;
+  text-decoration: underline;
+}
+
+.bi-caret-right-fill {
+  color: #E63946;
 }
 /*# sourceMappingURL=estilos.css.map */
