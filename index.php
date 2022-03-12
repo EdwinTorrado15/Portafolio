@@ -68,7 +68,7 @@
 
         <!-- Boton -->
         <div class="mt-2">
-          <a class="btn contactame" id="#contacto"> Contactame </a>
+          <a class="btn contactame" href="#contacto"> Contactame </a>
         </div>
 
         <div class="iconos mt-3">
@@ -211,13 +211,65 @@
     <!-- Seccion contactame -->
     <section class="container mt-5 py-5" id="contacto">
       <div class="row text-center">
+        <div class="col-xl-12">
+          <h2 class="pt-5">Contactame</h2>
+        </div>
+
         <div>
-          <h2>Contactame</h2>
+          <form method="POST" action="correo.php" id="formulario-contacto" name="formulario-contacto" class="mt-4">
+            <div class="mb-3">
+              <label for="nombre" class="form-label">Nombre:</label>
+              <input type="text" name="nombre" id="nombre" class="form-control" placeholder="Escribe tu nombre" required>
+            </div>
+            <div class="row mb-3">
+              <div class="col">
+                <label for="email" class="form-label">Email:</label>
+                <input type="email" class="form-control" name="emai" id="emai" placeholder="Escribe el email" required>
+                <div class="invalid-feedback">
+                  Ingresa una direccion de correo valida
+                </div>
+              </div>
+              <div class="col">
+                <label for="proyecto" class="form-label">Nombre proyecto:</label>
+                <input type="text" name="proyecto" id="proyecto" class="form-control" placeholder="Nombre del proyecto" required>
+              </div>
+            </div>
+            <div class="mb-3">
+              <label for="mensaje">Descripcion:</label>
+              <textarea class="form-control" rows="3" id="mensaje" name="mensaje" placeholder="Descripcion del proyecto" required></textarea>
+            </div>
+            <div>
+              <button type="submit" class="btn" name="enviar">Enviar</button>
+            </div>
+          </form>
+        </div>   
         </div>
       </div>
     </section>
     <!-- Fin seccion contactame -->
 
+    <!-- Seccion Footer -->
+    <footer class="container-fluid py-3 text-center">
+      <div class="row">
+        <div>
+          <p>Redes sociales</p>
+      <a href="https://www.facebook.com/edwinandres.torradobotia" target="_blank" class="icono-link"><i class="bi bi-facebook"></i></a>
+      <a href="https://www.instagram.com/edwintorrado/" target="_blank" class="icono-link"><i class="bi bi-instagram"></i></a>
+        </div>
+        <div>
+          <p>Otras formas de contacto</p>
+          <p><i class="bi bi-whatsapp icono-link"></i> 3153773151</p>
+        </div>
+      </div>
+      <hr>
+      <p>@Derechos reservados.Edwin Torrado</p>
+    </footer>
+    <!-- Fin seccion Footer -->
+
     <script src="/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <?php
+      include("correo.php");
+    ?>
   </body>
 </html>

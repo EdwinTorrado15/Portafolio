@@ -136,3 +136,23 @@ h2{
         color: $color-iconos;
     }
 //Fin seccion habilidades
+
+//Seccion contacto
+form{
+    .btn{
+        color: $color-menu ;
+    }
+    .btn:hover{
+        color: $color-menu;
+    }
+}
+//Fin seccion contacto
+
+//Seccion footer
+footer{
+    background: $color-navbar;
+    p{
+        color: $color-menu;
+    }
+}
+//Fin seccion footer

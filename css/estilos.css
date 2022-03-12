@@ -12105,4 +12105,20 @@ h2, .h2 {
 .bi-caret-right-fill {
   color: #E63946;
 }
+
+form .btn {
+  color: #ffffff;
+}
+
+form .btn:hover {
+  color: #ffffff;
+}
+
+footer {
+  background: #E63946;
+}
+
+footer p {
+  color: #ffffff;
+}
 /*# sourceMappingURL=estilos.css.map */
