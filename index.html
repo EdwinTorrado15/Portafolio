@@ -214,12 +214,18 @@
         <div class="col-xl-12">
           <h2 class="pt-5">Contactame</h2>
         </div>
-
         <div>
-          <form method="POST" action="correo.php" id="formulario-contacto" name="formulario-contacto" class="mt-4">
-            <div class="mb-3">
+          <form id="form" name="form" class="mt-4" action="https://formspree.io/f/mzbovpwv"
+          method="POST">
+            <div class="row mb-3">
+              <div class="col">
               <label for="nombre" class="form-label">Nombre:</label>
               <input type="text" name="nombre" id="nombre" class="form-control" placeholder="Escribe tu nombre" required>
+              </div>
+              <div class="col">
+                <label for="telefono" class="form-label">Telefono:</label>
+                <input type="text" name="telefono" id="telefono" class="form-control" placeholder="Numero de contacto">
+              </div>
             </div>
             <div class="row mb-3">
               <div class="col">
@@ -256,10 +262,6 @@
       <a href="https://www.facebook.com/edwinandres.torradobotia" target="_blank" class="icono-link"><i class="bi bi-facebook"></i></a>
       <a href="https://www.instagram.com/edwintorrado/" target="_blank" class="icono-link"><i class="bi bi-instagram"></i></a>
         </div>
-        <div>
-          <p>Otras formas de contacto</p>
-          <p><i class="bi bi-whatsapp icono-link"></i> 3153773151</p>
-        </div>
       </div>
       <hr>
       <p>@Derechos reservados.Edwin Torrado</p>
@@ -267,9 +269,6 @@
     <!-- Fin seccion Footer -->
 
     <script src="/bootstrap/dist/js/bootstrap.min.js"></script>
-
-    <?php
-      include("correo.php");
-    ?>
+    <script src="/correo.js"></script>
   </body>
 </html>
