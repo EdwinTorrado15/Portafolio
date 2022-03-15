@@ -102,7 +102,7 @@
             Un joven apasionado por el mundo de la tecnologia y el desarrollo web, especialmente en la parte del Front-End y abierto a aprender muchisimas cosas sobre este maravilloso mundo.
           </p>
           <div class="mt-2">
-            <a class="btn acerca" id="#contacto"> Descargar CV </a>
+            <a href="/Hoja de vida.pdf" target="_blank" class="btn acerca" id="#contacto"> Ver CV </a>
           </div>
         </div>
       </div>
@@ -218,33 +218,45 @@
           <form id="form" name="form" class="mt-4" action="https://formspree.io/f/mzbovpwv"
           method="POST">
             <div class="row mb-3">
-              <div class="col">
-              <label for="nombre" class="form-label">Nombre:</label>
-              <input type="text" name="nombre" id="nombre" class="form-control" placeholder="Escribe tu nombre" required>
+              <!-- Grupo nombre -->
+              <div class="col" id="grupo-nombre">
+              <label for="nombre" class="form-label">Nombre: </label>
+              <input type="text" name="nombre" id="nombre" class="form-control" placeholder="Escribe tu nombre">
+              <div class="invalid-feedback">No se permiten signos especiales</div>
+              <div class="valid-feedback">Bien!</div>
               </div>
-              <div class="col">
+              <!-- Grupo telefono -->
+              <div class="col" id="grupo-telefono">
                 <label for="telefono" class="form-label">Telefono:</label>
                 <input type="text" name="telefono" id="telefono" class="form-control" placeholder="Numero de contacto">
+                <div class="invalid-feedback">Numero de telefono incorrecto</div>
+                <div class="valid-feedback">Bien!</div>
               </div>
             </div>
             <div class="row mb-3">
-              <div class="col">
+              <!-- Grupo email -->
+              <div class="col" id="grupo-email">
                 <label for="email" class="form-label">Email:</label>
                 <input type="email" class="form-control" name="emai" id="emai" placeholder="Escribe el email" required>
-                <div class="invalid-feedback">
-                  Ingresa una direccion de correo valida
+                <div class="invalid-feedback">Ingresa una direccion de correo valida
                 </div>
+                <div class="valid-feedback">Bien!</div>
               </div>
-              <div class="col">
+              <div class="col" id="grupo-proyecto">
+                <!-- Grupo proyecto -->
                 <label for="proyecto" class="form-label">Nombre proyecto:</label>
                 <input type="text" name="proyecto" id="proyecto" class="form-control" placeholder="Nombre del proyecto" required>
               </div>
             </div>
-            <div class="mb-3">
+            <div class="mb-3" id="grupo-descripcion">
+              <!-- Grupo descripcion -->
               <label for="mensaje">Descripcion:</label>
               <textarea class="form-control" rows="3" id="mensaje" name="mensaje" placeholder="Descripcion del proyecto" required></textarea>
+              <div class="invalid-feedback">Minimos 20 caracteres</div>
+              <div class="valid-feedback">Bien!</div>
             </div>
             <div>
+              <!-- Enviar -->
               <button type="submit" class="btn" name="enviar">Enviar</button>
             </div>
           </form>
@@ -269,6 +281,8 @@
     <!-- Fin seccion Footer -->
 
     <script src="/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="/correo.js"></script>
+    <script src="js/correo.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
   </body>
 </html>
