@@ -11,17 +11,16 @@
     />
     <title>Portafolio</title>
   </head>
-  <body>
-    <!-- data-bs-spy="scroll" data-bs-target="#navbar-edwin" data-bs-offset="10" tabindex="0" -->
+  <body data-bs-target="#navbar" data-bs-spy="scroll">
 
     <!-- Barra de navegacion -->
-    <nav class="navbar navbar-expand-lg fixed-top">
+    <nav id="navbar" class="navbar navbar-expand-lg fixed-top">
       <div class="container">
         <a class="navbar-brand text-white" href="#">
           <span class="align-middle">Edwin</span>
         </a>
         <button
-          class="navbar-toggler navbar-dark"
+          class="navbar-toggler collapsed d-flex d-lg-none flex-column justify-content-around"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarNav"
@@ -29,24 +28,31 @@
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <span class="navbar-toggler-icon"></span>
+        <span class="toggler-icon top-bar"></span>
+        <span class="toggler-icon middle-bar"></span>
+        <span class="toggler-icon bottom-bar"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
+          <ul class="navbar-nav ms-auto nav-pills">
+            <li><hr class="dropdown-divider"></li>
             <li class="nav-item">
               <a class="nav-link color-menu" aria-current="page" href="#acerca"
                 >Acerca</a
               >
             </li>
+            <li><hr class="dropdown-divider"></li>
             <li class="nav-item">
               <a class="nav-link color-menu" href="#experiencia">Experiencia</a>
             </li>
+            <li><hr class="dropdown-divider"></li>
             <li class="nav-item">
               <a class="nav-link color-menu" href="#proyecto">Proyectos</a>
             </li>
+            <li><hr class="dropdown-divider"></li>
             <li class="nav-item">
               <a class="nav-link color-menu" href="#habilidad">Habilidades</a>
             </li>
+            <li><hr class="dropdown-divider"></li>
             <li class="nav-item">
               <a class="nav-link color-menu" href="#contacto">Contacto</a>
             </li>
@@ -59,7 +65,7 @@
     <!-- Seccion Hola -->
     <section class="container text-center mt-5 py-5">
       <div class="row justify-content-center">
-        <div class="col-xl-12">
+        <div class="col-xl-12 col-lg-10 col-sm-10 col-12">
           <h1 class="encabezado py-5">
             Hola,Soy <span class="span-hola">Edwin Torrado</span> Front-End
             Developer
@@ -83,26 +89,25 @@
     <!-- Seccion Acerca -->
     <section class="container mt-5 py-5" id="acerca">
       <div class="row justify-content-center align-items-center">
-        <div class="col-xl-12">
+        <div class="col-12">
           <h2 class="text-center pt-5">Acerca</h2>
         </div>
-        <div class="col-xl-6">
+        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-10 col-10">
           <div class="text-center">
             <img
             src="/images/imagen perfil.jpeg"
             alt="Foto de perfil"
             class="img-fluid w-50 rounded imagen mt-4"
           />
-          </div>
-          
+          </div>    
         </div>
-        <div class="col-xl-6">
-          <h2 class="titulo-acerca text-start">¿Quien Soy?</h2>
+        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-10">
+          <h2 class="titulo-acerca text-start pt-sm-4 pt-4 ">¿Quien Soy?</h2>
           <p>
             Un joven apasionado por el mundo de la tecnologia y el desarrollo web, especialmente en la parte del Front-End y abierto a aprender muchisimas cosas sobre este maravilloso mundo.
           </p>
           <div class="mt-2">
-            <a href="/Hoja de vida.pdf" target="_blank" class="btn acerca" id="#contacto"> Ver CV </a>
+            <a href="/Hoja de vida.pdf" target="_blank" class="btn" id="#contacto"> Ver CV </a>
           </div>
         </div>
       </div>
@@ -112,24 +117,24 @@
     <!-- Seccion Experiencias -->
     <section class="container mt-5 py-5" id="experiencia">
       <div class="row justify-content-center align-items-center">
-        <div class="col-xl-12">
+        <div class="col-12">
           <h2 class="text-center pt-5">Experiencias</h2>
         </div>
-        <div class="col-xl-4">
+        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-5 col-5">
           <div class="admin-gym text-center mt-4 p-3">
             <i class="bi bi-people-fill "></i>
             <h5>Administrador Gym</h5>
             <p>Direccion del personal, cajero y atencion al cliente</p>
           </div>
         </div>
-        <div class="col-xl-4">
+        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-5 col-5">
           <div class="front-end text-center mt-4 p-3">
             <i class="bi bi-laptop-fill"></i>
             <h5>Front-End</h5>
             <p>Desarrollador Front-End en proceso</p>
         </div>
       </div>
-        <div class="col-xl-4">
+        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-5 col-5">
           <div class="web-designer text-center mt-4 p-3">
             <i class="bi bi-pencil-fill"></i>
             <h5>Diseñador Web</h5>
@@ -144,61 +149,88 @@
     <!-- Seccion proyectos -->
     <section class="container mt-5 py-5" id="proyecto">
       <div class="row text-center">
-        <div class="col-xl-12">
+        <div class="col-12">
           <h2 class="text-center pt-5">Proyectos</h2>
         </div>
-        <div class="col-xl-6">
+        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6">
           <div class="proyecto mt-5 p-3">
             <h5>X-Fit Reto Cúcuta</h5>
             <p>
               Este proyecto consiste en realizar una pagina web para un Gymnasio de la ciudad de Cúcuta
             </p>
-            <button class="btn disabled">
+            <a class="btn disabled">
               <i class="bi bi-tools"></i>
               En desarrollo
-            </button>
+            </a>
           </div>
         </div>
-        <div class="col-xl-6">
+        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6">
           <div class="proyecto mt-5 p-3">
             <h5>Diseño pagina web gym</h5>
             <p>Este diseño consiste en una pagina web de un Gymnasio de la ciudad de Cúcuta</p>
-            <button class="btn">
+            <a class="btn">
               Ir al diseño
-            </button>
+            </a>
           </div>
         </div>
+        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6">
+          <div class="proyecto mt-5 p-3">
+            <h5>Carta Codigo QR</h5>
+            <p>Se realizo una carta con un codigo QR (Front-End Mentor)</p>
+            <a class="btn" href="https://card-cod-qr.netlify.app/" target="_blank">
+              Ir a la pagina
+            </a>
+          </div>
+        </div>
+        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6">
+          <div class="proyecto mt-5 p-3">
+            <h5>Carta orden pedido</h5>
+            <p>Se realizo una carta de una orden de pedido (Front-End Mentor)</p>
+            <a class="btn" href="https://ordersumary.netlify.app/" target="_blank">
+              Ir a la pagina
+            </a>
+        </div>
       </div>
+      <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6">
+        <div class="proyecto mt-5 p-3">
+          <h5>Carta NFT</h5>
+          <p>Se realizo una carta NFT(Front-End Mentor)</p>
+          <a class="btn" href="https://nft-card-fe.netlify.app/" target="_blank">
+            Ir a la pagina
+          </a>
+      </div>
+    </div>
+    </div>
     </section>
     <!-- Fin Seccion proyectos -->
 
     <!-- Seccion habilidades -->
     <section class="container mt-5 py-5" id="habilidad">
       <div class="row">
-        <div class="col-xl-12">
+        <div class="col-12">
           <h2 class="text-center pt-5">Habilidades</h2>
         </div>
-        <div class="col-xl-6">
+        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-8 col-8">
           <div class="front-end text-center mt-5 p-3">
             <h5 class="titulo">Front-End</h5>
             <div class="row align-items-center">
-              <div class="col-xl-6">
+              <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6">
                 <p><i class="bi bi-caret-right-fill"></i>HTML5</p>
                 <p><i class="bi bi-caret-right-fill"></i>CSS3</p>
                 <p><i class="bi bi-caret-right-fill"></i>Bootstrap</p>
               </div>
-              <div class="col-xl-6">
+              <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6">
                   <p><i class="bi bi-caret-right-fill"></i>JavaScript</p>
                   <p><i class="bi bi-caret-right-fill"></i>Saas</p>
               </div>
             </div>
           </div>
         </div>
-        <div class="col-xl-6">
+        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-4 col-4">
           <div class="web-designer text-center mt-5 p-3" >
             <h5 class="titulo">Diseñador Web</h5>
             <div class="row align-items-center">
-              <div class="col-xl-12">
+              <div class="col-12">
                 <p><i class="bi bi-caret-right-fill"></i>Figma</p>
               </div>
             </div>
@@ -211,7 +243,7 @@
     <!-- Seccion contactame -->
     <section class="container mt-5 py-5" id="contacto">
       <div class="row text-center">
-        <div class="col-xl-12">
+        <div class="col-12">
           <h2 class="pt-5">Contactame</h2>
         </div>
         <div>
@@ -219,14 +251,14 @@
           method="POST">
             <div class="row mb-3">
               <!-- Grupo nombre -->
-              <div class="col" id="grupo-nombre">
+              <div class="col col-lg-6" id="grupo-nombre">
               <label for="nombre" class="form-label">Nombre: </label>
               <input type="text" name="nombre" id="nombre" class="form-control" placeholder="Escribe tu nombre">
               <div class="invalid-feedback">No se permiten signos especiales</div>
               <div class="valid-feedback">Bien!</div>
               </div>
               <!-- Grupo telefono -->
-              <div class="col" id="grupo-telefono">
+              <div class="col col-lg-6" id="grupo-telefono">
                 <label for="telefono" class="form-label">Telefono:</label>
                 <input type="text" name="telefono" id="telefono" class="form-control" placeholder="Numero de contacto">
                 <div class="invalid-feedback">Numero de telefono incorrecto</div>
