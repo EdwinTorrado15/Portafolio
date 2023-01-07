@@ -3,10 +3,10 @@ $header-height: 3rem;
 // Colors
 $hue: 0;
 $saturation: 0%;
-$title-color: hsl(var($hue), var($saturation), 20%);
-$title-color-dark: hsl(var($hue), var($saturation), 0%);
-$text-color: hsl(var($hue), var($saturation), 46%);
-$body-color: hsl(var($hue), var($saturation), 98%);
+$title-color: hsl($hue, $saturation, 20%);
+$title-color-dark: hsl($hue, $saturation, 0%);
+$text-color: hsl($hue, $saturation, 46%);
+$body-color: hsl($hue, $saturation, 98%);
 $container-color: #fff;
 
 // Font and typography
