@@ -1,4 +1,4 @@
-import {Navbar, Home, Acerca} from "./components"
+import {Navbar, Home, Acerca, Skills} from "./components"
 
 function App() {
 
@@ -8,6 +8,7 @@ function App() {
       <main className="main">
         <Home/>
         <Acerca/>
+        <Skills/>
       </main>
     </>
   )

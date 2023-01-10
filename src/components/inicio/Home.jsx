@@ -3,7 +3,7 @@ import { Social, Data, ScrollDown } from "..";
 
 const Home = () => {
   return (
-    <section className="home section" id="home">
+    <section className="home section" id="inicio">
       <div className="home-container container grid">
         <div className="home-content grid">
           <Social />

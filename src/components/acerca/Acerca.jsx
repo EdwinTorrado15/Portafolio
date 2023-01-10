@@ -5,7 +5,7 @@ import { FilePdf } from "phosphor-react";
 
 const Acerca = () => {
   return (
-    <section className="about section" id="about">
+    <section className="about section" id="acerca">
       <h2 className="section-title">Acerca de mi</h2>
       <span className="section-subtitle">Mi introduccion</span>
 
