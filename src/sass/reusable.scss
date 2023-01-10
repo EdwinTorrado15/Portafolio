@@ -2,6 +2,21 @@
   padding: 6rem 0 2rem;
 }
 
+@media screen and (max-width: 768px) {
+
+  body{
+    margin: 0 0 $header-height 0;
+  }
+
+  .section {
+    padding: 2rem 0 4rem;
+  }
+
+  .section-subtitle{
+    margin-bottom: $mb-3;
+  }
+}
+
 .section-title {
   font-size: $h1-font-size;
   color: $title-color;

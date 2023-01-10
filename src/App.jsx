@@ -1,11 +1,15 @@
-import {Navbar} from "./components"
+import {Navbar, Home, Acerca} from "./components"
 
 function App() {
 
   return (
-    <div>
+    <>
       <Navbar/>
-    </div>
+      <main className="main">
+        <Home/>
+        <Acerca/>
+      </main>
+    </>
   )
 }
 

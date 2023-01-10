@@ -19,11 +19,11 @@ const Navbar = () => {
         <a href="index.html" className="nav-logo">
           Edwin
         </a>
-        <div className={toggle ? 'nav-menu show-menu' : 'nav-menu'}>
+        <div className={toggle ? "nav-menu show-menu" : "nav-menu"}>
           <ul className="nav-list grid">
             <li className="nav-item">
               <a href="#inicio" className="nav-link active-link">
-                <i className="uil nav-icon">
+                <i className="nav-icon">
                   <House />
                 </i>{" "}
                 Inicio
@@ -31,7 +31,7 @@ const Navbar = () => {
             </li>
             <li className="nav-item">
               <a href="#acerca" className="nav-link">
-                <i className="uil nav-icon">
+                <i className="nav-icon">
                   <User />
                 </i>{" "}
                 Acerca
@@ -39,7 +39,7 @@ const Navbar = () => {
             </li>
             <li className="nav-item">
               <a href="#habilidades" className="nav-link">
-                <i className="uil nav-icon">
+                <i className="nav-icon">
                   <FileText />
                 </i>{" "}
                 Habilidades
@@ -47,7 +47,7 @@ const Navbar = () => {
             </li>
             <li className="nav-item">
               <a href="#servicios" className="nav-link">
-                <i className="uil nav-icon">
+                <i className="nav-icon">
                   <Briefcase />
                 </i>{" "}
                 Servicios
@@ -55,7 +55,7 @@ const Navbar = () => {
             </li>
             <li className="nav-item">
               <a href="#portafolio" className="nav-link">
-                <i className="uil nav-icon">
+                <i className="nav-icon">
                   <SquaresFour />
                 </i>{" "}
                 Portafolio
@@ -63,7 +63,7 @@ const Navbar = () => {
             </li>
             <li className="nav-item">
               <a href="#contacto" className="nav-link">
-                <i className="uil nav-icon">
+                <i className="nav-icon">
                   <ChatDots />
                 </i>{" "}
                 Contacto
@@ -71,13 +71,13 @@ const Navbar = () => {
             </li>
           </ul>
 
-          <i className="uil nav-close" onClick={() => setToggle(!toggle)}>
+          <i className=" nav-close" onClick={() => setToggle(!toggle)}>
             <X />
           </i>
         </div>
 
         <div className="nav-toggle" onClick={() => setToggle(!toggle)}>
-          <i className="uil">
+          <i className="">
             <List />
           </i>
         </div>
