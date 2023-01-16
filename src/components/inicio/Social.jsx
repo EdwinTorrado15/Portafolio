@@ -12,6 +12,7 @@ const Social = () => {
           <InstagramLogo />
         </i>
       </a>
+
       <a
         href="https://www.linkedin.com/in/edwintorrado15/"
         className="home-social-icon"
@@ -21,6 +22,7 @@ const Social = () => {
           <LinkedinLogo />
         </i>
       </a>
+      
       <a
         href="https://github.com/EdwinTorrado15"
         className="home-social-icon"

@@ -159,18 +159,17 @@
   }
 }
 @media screen and (max-width: 576px) {
-  .home{
-    .home-container{
-      .home-content{
-        .home-data{
-          .home-title{
+  .home {
+    .home-container {
+      .home-content {
+        .home-data {
+          .home-title {
             font-size: $h1-font-size;
           }
         }
       }
     }
   }
-
 }
 @media screen and (max-width: 350px) {
   .home {
@@ -180,8 +179,8 @@
           width: 180px;
           height: 180px;
         }
-        .home-data{
-          .home-subtitle{
+        .home-data {
+          .home-subtitle {
             font-size: $normal-font-size;
           }
         }

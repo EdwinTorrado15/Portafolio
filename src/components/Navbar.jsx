@@ -11,7 +11,14 @@ import {
 import { useState } from "react";
 
 const Navbar = () => {
+  window.addEventListener("scroll", function () {
+    const header = document.querySelector(".header");
+    if (this.scrollY >= 560) header.classList.add("scroll-header");
+    else header.classList.remove("scroll-header");
+  });
+
   const [toggle, setToggle] = useState(false);
+  const [activeNav, setActiveNav] = useState("#inicio");
 
   return (
     <header className="header">
@@ -22,7 +29,13 @@ const Navbar = () => {
         <div className={toggle ? "nav-menu show-menu" : "nav-menu"}>
           <ul className="nav-list grid">
             <li className="nav-item">
-              <a href="#inicio" className="nav-link active-link">
+              <a
+                href="#inicio"
+                className={
+                  activeNav === "#inicio" ? "nav-link active-link" : "nav-link"
+                }
+                onClick={() => setActiveNav("#inicio")}
+              >
                 <i className="nav-icon">
                   <House />
                 </i>{" "}
@@ -30,7 +43,13 @@ const Navbar = () => {
               </a>
             </li>
             <li className="nav-item">
-              <a href="#acerca" className="nav-link">
+              <a
+                href="#acerca"
+                className={
+                  activeNav === "#acerca" ? "nav-link active-link" : "nav-link"
+                }
+                onClick={() => setActiveNav("#acerca")}
+              >
                 <i className="nav-icon">
                   <User />
                 </i>{" "}
@@ -38,7 +57,15 @@ const Navbar = () => {
               </a>
             </li>
             <li className="nav-item">
-              <a href="#habilidades" className="nav-link">
+              <a
+                href="#habilidades"
+                className={
+                  activeNav === "#habilidades"
+                    ? "nav-link active-link"
+                    : "nav-link"
+                }
+                onClick={() => setActiveNav("#habilidades")}
+              >
                 <i className="nav-icon">
                   <FileText />
                 </i>{" "}
@@ -46,7 +73,15 @@ const Navbar = () => {
               </a>
             </li>
             <li className="nav-item">
-              <a href="#servicios" className="nav-link">
+              <a
+                href="#servicios"
+                className={
+                  activeNav === "#servicios"
+                    ? "nav-link active-link"
+                    : "nav-link"
+                }
+                onClick={() => setActiveNav("#servicios")}
+              >
                 <i className="nav-icon">
                   <Briefcase />
                 </i>{" "}
@@ -54,15 +89,31 @@ const Navbar = () => {
               </a>
             </li>
             <li className="nav-item">
-              <a href="#portafolio" className="nav-link">
+              <a
+                href="#proyectos"
+                className={
+                  activeNav === "#proyectos"
+                    ? "nav-link active-link"
+                    : "nav-link"
+                }
+                onClick={() => setActiveNav("#proyectos")}
+              >
                 <i className="nav-icon">
                   <SquaresFour />
                 </i>{" "}
-                Portafolio
+                Proyectos
               </a>
             </li>
             <li className="nav-item">
-              <a href="#contacto" className="nav-link">
+              <a
+                href="#contacto"
+                className={
+                  activeNav === "#contacto"
+                    ? "nav-link active-link"
+                    : "nav-link"
+                }
+                onClick={() => setActiveNav("#contacto")}
+              >
                 <i className="nav-icon">
                   <ChatDots />
                 </i>{" "}

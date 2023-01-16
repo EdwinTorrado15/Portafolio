@@ -22,7 +22,7 @@ const Acerca = () => {
 
           <a download="" href={EdwinCV} className="button button-flex">
             Descargar CV
-            <FilePdf size={30} />
+            <FilePdf className="button-icon" />
           </a>
         </div>
       </div>

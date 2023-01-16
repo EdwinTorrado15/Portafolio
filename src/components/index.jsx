@@ -8,3 +8,7 @@ export { default as Info } from "./acerca/Info";
 export { default as Skills } from "./skills/Skills";
 export { default as Frontend } from "./skills/Frontend";
 export { default as Backend } from "./skills/Backend";
+export { default as Servicios } from "./servicios/Servicios";
+export { default as Contact } from "./contact/Contact";
+export { default as Footer } from "./footer/Footer";
+export { default as ScrollUp } from "./scrollup/ScrollUp";

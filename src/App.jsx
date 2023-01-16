@@ -1,17 +1,29 @@
-import {Navbar, Home, Acerca, Skills} from "./components"
+import {
+  Navbar,
+  Home,
+  Acerca,
+  Skills,
+  Servicios,
+  Contact,
+  Footer,
+  ScrollUp,
+} from "./components";
 
 function App() {
-
   return (
     <>
-      <Navbar/>
+      <Navbar />
       <main className="main">
-        <Home/>
-        <Acerca/>
-        <Skills/>
+        <Home />
+        <Acerca />
+        <Skills />
+        <Servicios />
+        <Contact />
       </main>
+      <ScrollUp />
+      <Footer />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
