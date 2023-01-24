@@ -16,7 +16,7 @@ const Info = () => {
           <Briefcase className="about-icon" />
         </i>
         <h3 className="about-title">Completados</h3>
-        <span className="about-subtitle">5 Proyectos</span>
+        <span className="about-subtitle">4 Proyectos</span>
       </div>
       <div className="about-box">
         <Headset className="about-icon" />

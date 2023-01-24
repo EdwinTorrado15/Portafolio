@@ -23,6 +23,7 @@ const Projects = () => {
           </>
         ))}
       </div>
+      <span className="section-final">Más en camino...</span>
     </section>
   );
 };

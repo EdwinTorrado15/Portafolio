@@ -3,8 +3,7 @@
 }
 
 @media screen and (max-width: 768px) {
-
-  body{
+  body {
     margin: 0 0 $header-height 0;
   }
 
@@ -12,7 +11,7 @@
     padding: 2rem 0 4rem;
   }
 
-  .section-subtitle{
+  .section-subtitle {
     margin-bottom: $mb-3;
   }
 }
@@ -26,6 +25,13 @@
   display: block;
   font-size: $small-font-size;
   margin-bottom: 4rem;
+}
+
+.section-final {
+  display: block;
+  font-size: $small-font-size;
+  margin-top: 3rem;
+  text-align: center;
 }
 
 .section-title,

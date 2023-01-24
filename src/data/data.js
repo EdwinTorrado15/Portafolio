@@ -1,4 +1,7 @@
-import perfil from "../assets/perfil.jpeg";
+import giffApp from "../assets/giffApp.png";
+import carritoApp from "../assets/carritoApp.png";
+import cryptoApp from "../assets/cryptoApp.png";
+import rickApp from "../assets/rickApp.png";
 
 export const navItems = [
   {
@@ -31,32 +34,26 @@ export const navItems = [
 export const cardProject = [
   {
     id: 1,
-    image: "https://picsum.photos/200/300",
+    image: giffApp,
     name: "Gif App",
     link: "https://github.com/EdwinTorrado15/Carrito-Compras",
   },
   {
     id: 2,
-    image: "https://picsum.photos/200/300",
+    image: carritoApp,
     name: "Carrito de compras",
     link: "https://github.com/EdwinTorrado15/Carrito-Compras",
   },
   {
     id: 3,
-    image: "https://picsum.photos/200/300",
+    image: cryptoApp,
     name: "Crypto App",
     link: "https://github.com/EdwinTorrado15/Carrito-Compras",
   },
   {
     id: 4,
-    image: "https://picsum.photos/200/300",
-    name: "Proyecto 4",
-    link: "https://github.com/EdwinTorrado15/Carrito-Compras",
-  },
-  {
-    id: 5,
-    image: "https://picsum.photos/200/300",
-    name: "Proyecto 5",
+    image: rickApp,
+    name: "Rick and Morty App",
     link: "https://github.com/EdwinTorrado15/Carrito-Compras",
   },
 ];
