@@ -36,7 +36,7 @@ export const cardProject = [
     id: 1,
     image: giffApp,
     name: "Gif App",
-    link: "https://github.com/EdwinTorrado15/Carrito-Compras",
+    link: "https://github.com/EdwinTorrado15/Gif_App",
   },
   {
     id: 2,
@@ -48,12 +48,12 @@ export const cardProject = [
     id: 3,
     image: cryptoApp,
     name: "Crypto App",
-    link: "https://github.com/EdwinTorrado15/Carrito-Compras",
+    link: "https://github.com/EdwinTorrado15/CryptoApp",
   },
   {
     id: 4,
     image: rickApp,
     name: "Rick and Morty App",
-    link: "https://github.com/EdwinTorrado15/Carrito-Compras",
+    link: "https://github.com/EdwinTorrado15/Riack_adn_Morty_app",
   },
 ];
