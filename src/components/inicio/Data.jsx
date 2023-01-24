@@ -7,11 +7,11 @@ const Data = () => {
       <h1 className="home-title">Edwin Torrado</h1>
       <h3 className="home-subtitle">Desarrollador FullStack JS</h3>
       <p className="home-description">
-        Soy un joven apasionado y dedicado por el mundo de la tecnologia y el
+        Soy un joven apasionado y dedicado por el mundo de la tecnología y el
         desarrollo web.
       </p>
-      <a href="#contact" className="button button-flex">
-        Conctactame <PaperPlaneTilt className="button-icon"/>
+      <a href="#contacto" className="button button-flex">
+        Contáctame <PaperPlaneTilt className="button-icon" />
       </a>
     </div>
   );

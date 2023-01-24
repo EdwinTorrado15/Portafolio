@@ -16,11 +16,11 @@ const Info = () => {
           <Briefcase className="about-icon" />
         </i>
         <h3 className="about-title">Completados</h3>
-        <span className="about-subtitle">Proyectos</span>
+        <span className="about-subtitle">5 Proyectos</span>
       </div>
       <div className="about-box">
         <Headset className="about-icon" />
-        <h3 className="about-title">Atencion</h3>
+        <h3 className="about-title">Atención</h3>
         <span className="about-subtitle">Disponible 24/7</span>
       </div>
     </div>

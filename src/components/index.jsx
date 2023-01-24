@@ -12,3 +12,4 @@ export { default as Servicios } from "./servicios/Servicios";
 export { default as Contact } from "./contact/Contact";
 export { default as Footer } from "./footer/Footer";
 export { default as ScrollUp } from "./scrollup/ScrollUp";
+export { default as Projects } from "./proyectos/Projects";

@@ -2,7 +2,7 @@
   background-color: $container-color;
   border-top: 1px solid rgba($color: #000000, $alpha: 0.1);
   .footer-container {
-    padding: 2rem 0 6rem;
+    padding: 2rem 0 2rem;
     .footer-title {
       color: $title-color;
       text-align: center;
@@ -41,7 +41,7 @@
 
     .footer-copy {
       display: block;
-      margin-top: 4.5rem;
+      margin-top: 2rem;
       color: $title-color;
       text-align: center;
       font-size: $small-font-size;

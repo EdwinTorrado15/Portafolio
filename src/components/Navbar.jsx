@@ -1,13 +1,5 @@
-import {
-  Briefcase,
-  ChatDots,
-  FileText,
-  House,
-  List,
-  SquaresFour,
-  User,
-  X,
-} from "phosphor-react";
+import { List, X } from "phosphor-react";
+import { navItems } from "../data/data";
 import { useState } from "react";
 
 const Navbar = () => {
@@ -28,98 +20,19 @@ const Navbar = () => {
         </a>
         <div className={toggle ? "nav-menu show-menu" : "nav-menu"}>
           <ul className="nav-list grid">
-            <li className="nav-item">
-              <a
-                href="#inicio"
-                className={
-                  activeNav === "#inicio" ? "nav-link active-link" : "nav-link"
-                }
-                onClick={() => setActiveNav("#inicio")}
-              >
-                <i className="nav-icon">
-                  <House />
-                </i>{" "}
-                Inicio
-              </a>
-            </li>
-            <li className="nav-item">
-              <a
-                href="#acerca"
-                className={
-                  activeNav === "#acerca" ? "nav-link active-link" : "nav-link"
-                }
-                onClick={() => setActiveNav("#acerca")}
-              >
-                <i className="nav-icon">
-                  <User />
-                </i>{" "}
-                Acerca
-              </a>
-            </li>
-            <li className="nav-item">
-              <a
-                href="#habilidades"
-                className={
-                  activeNav === "#habilidades"
-                    ? "nav-link active-link"
-                    : "nav-link"
-                }
-                onClick={() => setActiveNav("#habilidades")}
-              >
-                <i className="nav-icon">
-                  <FileText />
-                </i>{" "}
-                Habilidades
-              </a>
-            </li>
-            <li className="nav-item">
-              <a
-                href="#servicios"
-                className={
-                  activeNav === "#servicios"
-                    ? "nav-link active-link"
-                    : "nav-link"
-                }
-                onClick={() => setActiveNav("#servicios")}
-              >
-                <i className="nav-icon">
-                  <Briefcase />
-                </i>{" "}
-                Servicios
-              </a>
-            </li>
-            <li className="nav-item">
-              <a
-                href="#proyectos"
-                className={
-                  activeNav === "#proyectos"
-                    ? "nav-link active-link"
-                    : "nav-link"
-                }
-                onClick={() => setActiveNav("#proyectos")}
-              >
-                <i className="nav-icon">
-                  <SquaresFour />
-                </i>{" "}
-                Proyectos
-              </a>
-            </li>
-            <li className="nav-item">
-              <a
-                href="#contacto"
-                className={
-                  activeNav === "#contacto"
-                    ? "nav-link active-link"
-                    : "nav-link"
-                }
-                onClick={() => setActiveNav("#contacto")}
-              >
-                <i className="nav-icon">
-                  <ChatDots />
-                </i>{" "}
-                Contacto
-              </a>
-            </li>
+            {navItems.map((item) => (
+              <li className="nav-item" key={item.id}>
+                <a
+                  href={item.ref}
+                  className={
+                    activeNav === item.ref ? "nav-link active-link" : "nav-link"
+                  }
+                  onClick={() => setActiveNav(item.ref)}
+                >
+                  {item.name}
+                </a>
+              </li>
+            ))}
           </ul>
 
           <i className=" nav-close" onClick={() => setToggle(!toggle)}>

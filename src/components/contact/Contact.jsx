@@ -26,41 +26,30 @@ const Contact = () => {
   return (
     <section className="contact section" id="contacto">
       <h2 className="section-title">Ponerse en contacto</h2>
-      <span className="section-subtitle">Contactame</span>
+      <span className="section-subtitle">Contáctame</span>
 
       <div className="contact-container container grid">
         <div className="contact-content">
-          <h3 className="contact-title">Hablame</h3>
+          <h3 className="contact-title">Háblame</h3>
 
           <div className="contact-info">
-            <div className="contact-card">
-              <EnvelopeOpen className="contact-card-icon" />
-              <h3 className="contact-card-title">Correo</h3>
-              <span className="contact-card-data">
-                edwintorrado15@gmail.com
-              </span>
-              <a
-                href="mailto:edwintorrado15@gmail.com"
-                className="contact-button"
-              >
-                Escribeme
-                <ArrowRight className="contact-button-icon" />
-              </a>
-            </div>
-
             <div className="contact-card">
               <WhatsappLogo className="contact-card-icon" />
               <h3 className="contact-card-title">WhatsApp</h3>
               <span className="contact-card-data">+57 3053773151</span>
-              <a href="" className="contact-button">
-                Escribeme
+              <a
+                href="https://wa.me/3053773151?text=Me%20interesa%20tu%20servicio"
+                target="_blank"
+                className="contact-button"
+              >
+                Escríbeme
                 <ArrowRight className="contact-button-icon" />
               </a>
             </div>
           </div>
         </div>
         <div className="contact-content">
-          <h3 className="contact-title">Escribeme tu proyecto </h3>
+          <h3 className="contact-title">Escríbeme tu proyecto </h3>
 
           <form ref={form} onSubmit={sendEmail} className="contact-form">
             <div className="contact-form-div">

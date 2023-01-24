@@ -6,8 +6,8 @@ import { FilePdf } from "phosphor-react";
 const Acerca = () => {
   return (
     <section className="about section" id="acerca">
-      <h2 className="section-title">Acerca de mi</h2>
-      <span className="section-subtitle">Mi introduccion</span>
+      <h2 className="section-title">Acerca de mí</h2>
+      <span className="section-subtitle">Mi introducción</span>
 
       <div className="about-container container grid">
         <img src={perfil} alt="" className="about-img" />
@@ -15,7 +15,7 @@ const Acerca = () => {
           <Info />
 
           <p className="about-description">
-            Desarrollador FullStack JS,creo landing y plataformas web con las
+            Desarrollador FullStack JS, creo landings y plataformas web con las
             habilidades de UI/UX para crear interfaces de usuario atractivas y
             de alta calidad.
           </p>

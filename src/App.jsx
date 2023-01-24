@@ -7,6 +7,7 @@ import {
   Contact,
   Footer,
   ScrollUp,
+  Projects,
 } from "./components";
 
 function App() {
@@ -17,7 +18,7 @@ function App() {
         <Home />
         <Acerca />
         <Skills />
-        <Servicios />
+        <Projects/>
         <Contact />
       </main>
       <ScrollUp />
